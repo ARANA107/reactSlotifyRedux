@@ -15,16 +15,15 @@ import AlbumsComponent from './components/AlbumsComponent';
 export default function App() {
   return (
     <Provider store={store}>
-      <SidebarComponent/>
+      
         <Router>
           <div>
             <Route path="/login" component={login} />
             <Route path="/maincomponent" component={MainComponent}/>
-            <Route path="/maincomponent/albums" component={MainComponent}/>
             <Route exact path="/" component={login} />
           </div>
         </Router>
-      <PlayerComponent/>
+      
     </Provider>
   );
 }
