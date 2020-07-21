@@ -1,13 +1,103 @@
 import React, { Component } from 'react'
-import PlayerComponent from './PlayerComponent';
-import SidebarComponent from './SidebarComponent';
+import { connect } from "react-redux";
+import { playSong, setCurrentAlbum, setCurrentSongObj } from '../actions/fetchSongs';
+import '../css/songs.css';
+import {Domain} from '../domainName';
 
-export default class songsComponent extends Component {
-    render() {
-        return (
-            <div>
-                this is list of songs
+class songsComponent extends Component {
+
+    constructor(props){
+        super(props);
+        this.state={
+            albumName: "some album",
+            albumPhoto: "http://localhost:3000/images/clearday.jpg",
+            albumSinger: "Rey",
+            songList: []
+        }
+        
+    }
+
+    setCurrentSongPath = (path) => {
+        this.props.playSong(path);
+    }
+    
+    componentDidMount () {
+      }
+
+      imageClick(item){
+          console.log('play this some ',item);
+          this.props.playSong(item.songPath);
+          this.props.setCurrentSongObj(item);
+      }
+
+
+    render(){
+  
+       
+        return(
+            <div>        
+                <div className="row ml-5 albumPane">
+                    <div className="albumImage">
+                        <img  src={Domain + this.props.album.albumPhoto} alt=""></img>
+                    </div>
+                    <div className="albumDetails">
+                        <div className="row"><h3 className="text-white">{this.state.albumName}</h3></div>
+                        <div className="row" className="text-white">{this.state.albumSinger}</div>
+                        <div className="row" className="text-white">Songs: {this.state.songList.length}</div>
+                    </div>
+                </div>
+
+                <div className="tracklistContainer">
+                    <ul className="tracklist">
+                        {this.props.songs.map((item,id)=>{
+                            return(
+                                <li key={id} className='tracklistRow'>
+                                    <div className='trackCount'>
+                                        <img onClick={() => this.imageClick(item)} className='play' alt="something" src={Domain + 'icons/play-white.png'}/>
+                                        <span className='trackNumber'>{item.songId}</span>
+                                    </div>
+
+
+                                    <div className='trackInfo'>
+                                        <span className='trackName'>{item.songName}</span>
+                                        <span className='artistName'>{item.albumSinger}</span>
+                                    </div>
+
+                                    <div className='trackOptions'>
+                                        <img className='play' alt="something" src={Domain + 'icons/more.png' }/>
+                                    </div>
+
+                                    <div className='trackDuration'>
+                                        <span className='duration'>3:32</span>
+                                    </div>
+
+                                </li>)
+                        })}  
+                    </ul>
+                </div>
+   
+
+                {this.props.albumInfo}
+            
             </div>
         )
     }
 }
+
+
+const mapDispatchToProps = dispatch => {
+    return {
+        playSong: (songPath) => dispatch(playSong(songPath)),
+        setCurrentSongObj: (song) => dispatch(setCurrentSongObj(song))
+    }
+}
+
+
+const mapStateToProps = state => ({
+    player: state.player.allSongs,
+    currentSong: state.player.currentSong,
+    albumsList: state.player.albumsList,
+    album: state.player.currentAlbum,
+    songs: state.player.allSongs
+})
+export default connect(mapStateToProps, mapDispatchToProps)(songsComponent)

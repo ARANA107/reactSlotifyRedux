@@ -1,9 +1,13 @@
-import {FETCH_SONGS, PLAY_SONG, LOG_IN_USER} from './playerActions';
+import {FETCH_SONGS,
+        PLAY_SONG,
+        LOG_IN_USER,
+        SET_ALBUM,
+        SET_CURRENT_SONGS,
+        SET_CURRENT_SONG_OBJ} from './playerActions';
 
 export const fetchSongs = () => dispatch =>{
     return dispatch({
         type: FETCH_SONGS,
-        payload: ["./songs/bensound-summer.mp3", "./songs/bensound-ukulele.mp3"]
     })
 }
 
@@ -21,4 +25,28 @@ console.log('user about to log in');
 return dispatch({
         type: LOG_IN_USER
 })
+}
+
+export const setCurrentAlbum = (album) => dispatch=>{
+    console.log('setAlbumSongs called', album);
+    return dispatch({
+        type:SET_ALBUM,
+        payload:album
+    })
+}
+
+export const setCurrentSongs = (songs) => dispatch=>{
+    console.log('SET_CURRENT_SONGS action called', songs);
+    return dispatch({
+        type: SET_CURRENT_SONGS,
+        payload:songs
+    })
+}
+
+export const setCurrentSongObj = (song) => dispatch=>{
+    console.log('SET_CURRENT_SONG_OBJ action called', song);
+    return dispatch({
+        type: SET_CURRENT_SONG_OBJ,
+        payload:song
+    })
 }
