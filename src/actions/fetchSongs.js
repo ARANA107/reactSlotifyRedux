@@ -45,6 +45,8 @@ export const setCurrentSongs = (songs) => dispatch=>{
 
 export const setCurrentSongObj = (song) => dispatch=>{
     console.log('SET_CURRENT_SONG_OBJ action called', song);
+    // let count = 0;
+    // song.count = count;
     return dispatch({
         type: SET_CURRENT_SONG_OBJ,
         payload:song

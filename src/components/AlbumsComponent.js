@@ -23,14 +23,24 @@ class AlbumsComponent extends Component {
         const style = {
             cursor: "pointer"
         }
+        const imageWidth={
+            width:"200px",
+            minWidth:"50px"
+        }
+        const thumbnail={
+            cursor:"pointer",
+            margin: "20px",
+            minWidth: "20px",
+            maxWidth: "180px"
+        }
         const domain = "http://localhost:3000/";
 
         const albums = this.props.albumsArray.map(album => {
             return (
-                <div key={album.id} className="col-lg-2 col-md-2 col-2">
-                    <div style={style} className="thumbnail" onClick={() => this.setSongs(album)}>
+                <div key={album.id}>
+                    <div style={style} style={thumbnail} onClick={() => this.setSongs(album)}>
                         <figure>
-                            <img src={domain + album.albumPhoto} className="img-fluid max-width:100%" alt="Lights" />
+                            <img src={domain + album.albumPhoto} style={imageWidth} className="img-fluid" alt="Lights" />
                         </figure>
                         <div className="caption text-center">
                             <p className="text-white">{album.albumName}</p>
@@ -42,7 +52,7 @@ class AlbumsComponent extends Component {
         return (
             <>
                 <h1 className="text-center text-white">Albums List</h1>
-                <div className="row d-flex">
+                <div className="row ml-5 d-flex">
                     {albums}
                 </div>
             </>

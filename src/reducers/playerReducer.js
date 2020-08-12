@@ -8,7 +8,7 @@ const initialState = {
   albumsList: [],
   currentAlbum:{},
   songsSelected: false,
-  currentSongObj:{}
+  currentSongObj:{},
   };
   
   function playerReducer(state = initialState, action) {
@@ -49,6 +49,7 @@ const initialState = {
           return {
             ...state,
             ...{currentSongObj:action.payload}
+            
           }
 
       default:

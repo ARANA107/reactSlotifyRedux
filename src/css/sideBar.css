@@ -1,11 +1,6 @@
 
-div.sideMain{
-    
-}
 .sideMain{
-    width:220px;
     height: 100%;
-    position: fixed;
     background-color:  #282828;
     border: solid #88f5aa;
     border-width: 0 1px 0 0

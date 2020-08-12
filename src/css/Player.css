@@ -10,6 +10,13 @@
     border-width: 1PX 0 0 0
 }
 
+.progressLoc {
+	background-color: #a0a0a0;
+    height: inherit;
+    width: 0;
+    border-radius: 2px;
+}
+
 #nowPlayingBarContainer {
 	width: 100%;
     background-color: #282828;
@@ -159,4 +166,3 @@
 	font-size: 12px;
     color: #a0a0a0;
 }
-

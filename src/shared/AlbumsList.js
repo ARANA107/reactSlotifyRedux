@@ -3,46 +3,46 @@ export const AlbumsList = [
             id:1,
             albumName: "some album",
             albumPhoto: "images/clearday.jpg",
-            albumSinger: "Rey",
+            albumSinger: "Ash",
             songs: [
                 {
                     songId:1,
                     songName: "lets see the wind",
-                    songDuration: 111,
+                    songDuration: "3:37",
                     songPath: "songs/bensound-summer.mp3"
                 },
                 {
                     songId:2,
                     songName: "lets eat some fun",
-                    songDuration: 555,
+                    songDuration: "1:44",
                     songPath: "songs/bensound-jazzyfrenchy.mp3"
 
                 },
                 {
                     songId:3,
                     songName: "lets poop some depression!",
-                    songDuration: 6969,
+                    songDuration: "1:29",
                     songPath: "songs/bensound-clearday.mp3"
 
                 },
                 {
                     songId:4,
                     songName: "this is 4th song",
-                    songDuration: 900,
+                    songDuration: "4:04",
                     songPath: "songs/bensound-goinghigher.mp3"
 
                 },
                 {
                     songId:5,
                     songName: "this is 5th song",
-                    songDuration: 6969,
+                    songDuration: "2:49",
                     songPath: "songs/bensound-littleidea.mp3"
 
                 },
                 {
                     songId:6,
                     songName: "this is 6th song",
-                    songDuration: 6969,
+                    songDuration: "2:26",
                     songPath: "songs/bensound-ukulele.mp3"
 
                 }
@@ -53,7 +53,7 @@ export const AlbumsList = [
             id:2,
             albumName: "ok thats it",
             albumPhoto: "images/funkyelement.jpg",
-            albumSinger: "Rey",
+            albumSinger: "Pawan",
             songs: [
                 {
                     songId:1,
@@ -76,7 +76,7 @@ export const AlbumsList = [
             id:3,
             albumName: "this is something",
             albumPhoto: "images/goinghigher.jpg",
-            albumSinger: "Rey",
+            albumSinger: "Johny",
             songs: [
                 {
                     songId:1,
@@ -93,7 +93,7 @@ export const AlbumsList = [
             id:4,
             albumName: "okay album",
             albumPhoto: "images/popdance.jpg",
-            albumSinger: "Rey",
+            albumSinger: "Random Singer",
             songs: [
                 {
                     songId:1,
@@ -116,7 +116,7 @@ export const AlbumsList = [
             id:5,
             albumName: "dom",
             albumPhoto: "images/sweet.jpg",
-            albumSinger: "Rey",
+            albumSinger: "Marlow",
             songs: [
                 {
                     songId:1,
@@ -153,7 +153,7 @@ export const AlbumsList = [
             id:6,
             albumName: "exmaple",
             albumPhoto: "images/ukulele.jpg",
-            albumSinger: "Rey",
+            albumSinger: "Michael",
             albumNum: 6,
             songs: [
                 {
@@ -184,7 +184,7 @@ export const AlbumsList = [
             id:7,
             albumName: "some album",
             albumPhoto: "images/energy.jpg",
-            albumSinger: "Rey",
+            albumSinger: "Sean",
             songs: [
                 {
                     songId:1,
@@ -193,17 +193,17 @@ export const AlbumsList = [
                     songPath: "songs/bensound-summer.mp3",
                 },
                 {
-                    songId:2,
+                    songId: 2,
                     songName: "cant think of any",
                     songDuration: 555,
-                    songPath: "songs/bensound-summer.mp3",
-                },
-                {
-                    songId:3,
+                    songPath: "songs/bensound-anewbeginning.mp3"
+                 },
+                 {
+                    songId: 3,
                     songName: "even 7 too much",
                     songDuration: 898,
-                    songPath: "songs/bensound-summer.mp3", 
-                }
+                    songPath: "songs/bensound-energy.mp3"
+                 }
 
             ]
         },

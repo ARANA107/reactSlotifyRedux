@@ -12,7 +12,8 @@ class songsComponent extends Component {
             albumName: "some album",
             albumPhoto: "http://localhost:3000/images/clearday.jpg",
             albumSinger: "Rey",
-            songList: []
+            songList: [],
+            count:0
         }
         
     }
@@ -25,9 +26,10 @@ class songsComponent extends Component {
       }
 
       imageClick(item){
-          console.log('play this some ',item);
-          this.props.playSong(item.songPath);
+        console.log('play this some ',item);
+          //this.props.playSong(item.songPath);
           this.props.setCurrentSongObj(item);
+          this.props.playsong(item);
       }
 
 
@@ -41,9 +43,9 @@ class songsComponent extends Component {
                         <img  src={Domain + this.props.album.albumPhoto} alt=""></img>
                     </div>
                     <div className="albumDetails">
-                        <div className="row"><h3 className="text-white">{this.state.albumName}</h3></div>
-                        <div className="row" className="text-white">{this.state.albumSinger}</div>
-                        <div className="row" className="text-white">Songs: {this.state.songList.length}</div>
+                        <div className="row"><h3 className="text-white">{this.props.album.albumName}</h3></div>
+                        <div className="row" className="text-white">{this.props.album.albumSinger}</div>
+                        <div className="row" className="text-white">Songs: {this.props.songs.length}</div>
                     </div>
                 </div>
 
@@ -68,7 +70,7 @@ class songsComponent extends Component {
                                     </div>
 
                                     <div className='trackDuration'>
-                                        <span className='duration'>3:32</span>
+                                        <span className='duration'>{item.songDuration}</span>
                                     </div>
 
                                 </li>)
@@ -87,7 +89,7 @@ class songsComponent extends Component {
 
 const mapDispatchToProps = dispatch => {
     return {
-        playSong: (songPath) => dispatch(playSong(songPath)),
+        // playSong: (songPath) => dispatch(playSong(songPath)),
         setCurrentSongObj: (song) => dispatch(setCurrentSongObj(song))
     }
 }
