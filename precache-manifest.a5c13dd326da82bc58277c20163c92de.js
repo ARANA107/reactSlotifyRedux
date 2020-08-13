@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e4cc17b5b50aba1cb9b14f4ce0804bff",
+    "revision": "7765a208548454a05e83e6d920a8e23a",
     "url": "/reactSlotifyRedux/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/reactSlotifyRedux/static/css/2.829c9cb5.chunk.css"
   },
   {
-    "revision": "1f9449c664b38afbaeff",
-    "url": "/reactSlotifyRedux/static/css/main.5b3296a3.chunk.css"
+    "revision": "5c8c3cd1d1e4cb46afe8",
+    "url": "/reactSlotifyRedux/static/css/main.85463c7e.chunk.css"
   },
   {
     "revision": "c59c8c4cf6962d97f35e",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/reactSlotifyRedux/static/js/2.0b262da1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1f9449c664b38afbaeff",
+    "revision": "5c8c3cd1d1e4cb46afe8",
     "url": "/reactSlotifyRedux/static/js/main.47a2d7c5.chunk.js"
   },
   {
