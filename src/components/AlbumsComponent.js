@@ -33,7 +33,7 @@ class AlbumsComponent extends Component {
             minWidth: "20px",
             maxWidth: "180px"
         }
-        const domain = "http://localhost:3000/";
+        const domain = "https://vast-coast-55318.herokuapp.com/";
 
         const albums = this.props.albumsArray.map(album => {
             return (

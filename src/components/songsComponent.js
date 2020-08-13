@@ -10,7 +10,7 @@ class songsComponent extends Component {
         super(props);
         this.state={
             albumName: "some album",
-            albumPhoto: "http://localhost:3000/images/clearday.jpg",
+            albumPhoto: "https://vast-coast-55318.herokuapp.com/images/clearday.jpg",
             albumSinger: "Rey",
             songList: [],
             count:0

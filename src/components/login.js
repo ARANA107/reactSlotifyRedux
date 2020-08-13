@@ -12,7 +12,7 @@ class login extends Component {
     if (this.state.isloggedin) {
       return <Redirect to="/maincomponent/albums" />;
     }
-    const domain = "http://localhost:3000";
+    const domain = "https://vast-coast-55318.herokuapp.com/";
     return (
         
       <div>

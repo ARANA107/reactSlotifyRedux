@@ -14,7 +14,7 @@ class PlayerComponent extends Component {
 
         this.state = {
             count: 0,
-            currentSong: "http://localhost:3000/songs/bensound-anewbeginning.mp3",
+            currentSong: "https://vast-coast-55318.herokuapp.com/songs/bensound-anewbeginning.mp3",
             remTime: 0.00,
             currTime:0.00,
             volSymbol: true,
