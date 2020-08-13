@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/reactSlotifyRedux/static/css/main.5b3296a3.chunk.css",
+    "main.js": "/reactSlotifyRedux/static/js/main.47a2d7c5.chunk.js",
+    "main.js.map": "/reactSlotifyRedux/static/js/main.47a2d7c5.chunk.js.map",
+    "runtime-main.js": "/reactSlotifyRedux/static/js/runtime-main.665284c2.js",
+    "runtime-main.js.map": "/reactSlotifyRedux/static/js/runtime-main.665284c2.js.map",
+    "static/css/2.829c9cb5.chunk.css": "/reactSlotifyRedux/static/css/2.829c9cb5.chunk.css",
+    "static/js/2.0b262da1.chunk.js": "/reactSlotifyRedux/static/js/2.0b262da1.chunk.js",
+    "static/js/2.0b262da1.chunk.js.map": "/reactSlotifyRedux/static/js/2.0b262da1.chunk.js.map",
+    "index.html": "/reactSlotifyRedux/index.html",
+    "precache-manifest.ffc0f515d7d8a533e399dc1d86068e87.js": "/reactSlotifyRedux/precache-manifest.ffc0f515d7d8a533e399dc1d86068e87.js",
+    "service-worker.js": "/reactSlotifyRedux/service-worker.js",
+    "static/css/2.829c9cb5.chunk.css.map": "/reactSlotifyRedux/static/css/2.829c9cb5.chunk.css.map",
+    "static/css/main.5b3296a3.chunk.css.map": "/reactSlotifyRedux/static/css/main.5b3296a3.chunk.css.map",
+    "static/js/2.0b262da1.chunk.js.LICENSE.txt": "/reactSlotifyRedux/static/js/2.0b262da1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.665284c2.js",
+    "static/css/2.829c9cb5.chunk.css",
+    "static/js/2.0b262da1.chunk.js",
+    "static/css/main.5b3296a3.chunk.css",
+    "static/js/main.47a2d7c5.chunk.js"
+  ]
+}
